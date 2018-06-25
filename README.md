@@ -1,10 +1,12 @@
-# 小程序瀑布流组件mpMasonry
+# mpMasonry
+
+> 小程序瀑布流组件
 
 ## 基本使用
 
-##### 将components目录下中masonry文件夹复制到自己项目中。
+##### 1、将components目录下中masonry文件夹复制到自己项目中。
 
-##### 添加业务组件，并在业务组件中添加property，用于承载数据
+##### 2、添加业务组件，并在业务组件中添加property，用于承载数据
 
     // property名必须为item
     properties: {
@@ -14,7 +16,7 @@
         }
     }
 
-##### 引入masonry组件和所需的业务组件
+##### 3、引入masonry组件和所需的业务组件
     
     // index.json
     "usingComponents": {
@@ -22,12 +24,12 @@
         "img-box": "../../components/img-box/img-box"
     }
 
-##### 在wxml加入masonry节点
+##### 4、在wxml加入masonry节点
 
     <!-- index.wxml -->
     <masonry generic:masonry-item="img-box" id="masonry" interval-width="20rpx"></masonry>
 
-##### 调用函数，渲染瀑布流
+##### 5、调用函数，渲染瀑布流
 
     _doRefreshMasonry(items) {
         // 通过ID，获取组件实例
