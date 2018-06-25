@@ -1,0 +1,12 @@
+.img-box{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.img-box image{
+    display: block;
+    width: 100%;
+}
+.img-box text{
+    font-size: 28rpx;
+    line-height: 1;
+}

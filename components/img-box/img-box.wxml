@@ -1,0 +1,4 @@
+<view class="img-box">
+    <image src="{{item.images_list[0].url}}"></image>
+    <text>{{item.name}}</text>
+</view>

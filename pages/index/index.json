@@ -1,0 +1,11 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "瀑布流",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+        "masonry": "../../components/masonry/masonry",
+        "img-box": "../../components/img-box/img-box"
+    }
+}

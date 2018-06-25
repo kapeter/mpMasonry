@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <masonry generic:masonry-item="img-box" id="masonry" interval-width="20rpx"></masonry>
+</view>
