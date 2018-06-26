@@ -1,8 +1,7 @@
 Component({
     properties: {
         item: { 
-            type: String,
-            value: ''
+            type: Object
         }
     }
 })

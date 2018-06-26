@@ -11,8 +11,7 @@
     // property名必须为item
     properties: {
         item: { 
-            type: String,
-            value: ''
+            type: Object
         }
     }
 
@@ -29,14 +28,16 @@
     <!-- index.wxml -->
     <masonry generic:masonry-item="img-box" id="masonry" interval-width="20rpx"></masonry>
 
+`generic:masonry-item`用于指定业务组件，`interval-width`为左右两列空隙宽度。
+
 ##### 5、调用函数，渲染瀑布流
 
-    _doRefreshMasonry(items) {
+    _doStartMasonry(items) {
         // 通过ID，获取组件实例
         this.masonryListComponent = this.selectComponent('#masonry');
-        // 调用组件的refresh函数，渲染瀑布流
+        // 调用组件的start函数，渲染瀑布流
         this.masonryListComponent.start(items).then(() => {
-            console.log('refresh completed')
+            console.log('render completed')
         })
     }
 
@@ -92,3 +93,7 @@
         </tr>
     </tbody>
 </table>
+
+## 实践案例
+
+![京东种草](https://api.kapeter.com/storage/TGDntXf3r0cUQ3KrmgMPYS1S9xN9noChbau4F0as.jpeg)
